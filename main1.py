@@ -92,8 +92,10 @@ def menu():
                 selected_function["func"]()
             else:
                 print("Некорректный ID функции.")
+                menu()
         except ValueError:
-            print("Пожалуйста, введите корректный ID.")
+            print("Пожалуйста, введите корректный ID.") 
+            menu()
 
 if __name__ == "__main__":
     menu()
